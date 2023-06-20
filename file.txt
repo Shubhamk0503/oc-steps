@@ -1,0 +1,296 @@
+    1  exit
+    2  python3 --version
+    3  yum install nodejs
+    4  sudo yum install nodejs
+    5  sudo yum remove nodejs
+    6  sudo dnf module install nodejs:14 -y
+    7  sudo dnf module reset nodejs
+    8  sudo dnf module install nodejs:14 -y
+    9  node --version
+   10  sudo dnf module install java-11-openjdk-devel
+   11  sudo dnf module install java-11-openjdk
+   12  sudo dnf module install java-11-*
+   13  java
+   14  java --version
+   15  git
+   16  mkdir sk
+   17  cd sk/
+   18  gir clone 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
+   19  #git clone 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
+   20  git clone https://github.com/Shubhamk0503/DO400-apps.git
+   21  ll
+   22  cd DO400-apps/
+   23  ll
+   24  head README.md 
+   25  oc login -u osagvo -p e1327c7490174c4ab795
+   26  oc whoami
+   27  oc login -u osagvo -p e1327c7490174c4ab795 https://api.ap46a.prod.ole.redhat.com:6443
+   28  oc get pods
+   29  oc get pods -n opensift
+   30  oc get pods -n openshift
+   31  oc get pods -n osagvo-jenkins
+   32  oc get pods -n openshift
+   33  oc project
+   34  oc get project
+   35  oc whoami 
+   36  oc get project
+   37  oc whoami 
+   38  oc get project
+   39  oc get template 
+   40  oc get project  
+   41  oc get template -n openshift | grep -i jenkins
+   42  oc get routes -n 
+   43  oc get project
+   44  oc get pods -n osagvo-jenkins
+   45  oc get projects
+   46  oc get pods -n https://console-openshift-console.apps.ap46a.prod.ole.redhat.com/catalog/ns/osagvo-jenkins1
+   47  oc get pods -n https://console-openshift-console.apps.ap46a.prod.ole.redhat.com/c
+   48  oc get pods -n osagvo-jenkins1
+   49  oc get routes -n osagvo-jenkins1
+   50  git config --global user.name "shubham3kumar@gmail.com"
+   51  git config --global user.email "shubham3kumar@gmail.com"
+   52  git config --list
+   53  mkdir git-basics
+   54  cd git-basics
+   55  git init .
+   56  vi person.py
+   57  python person.py
+   58  python3 person.py
+   59  git add person.py
+   60  git status
+   61  git commit -m "Initial Person implementation"
+   62   git branch -M main
+   63  cd 
+   64  ll
+   65  cd sk/
+   66  ll
+   67  cd DO400-apps/
+   68  ll
+   69  cd
+   70  mkdir hello-branches
+   71  vi helloworld.py
+   72  python3 hello
+   73  mv def say_hello(name):
+   74   print(f"Hello, {name}!")
+   75  ll
+   76  mv helloworld.py hello-branches/
+   77  cd hello-branches/
+   78  ll
+   79  python3 helloworld.py 
+   80  git add helloworld.py
+   81  git init
+   82  git add helloworld.py
+   83  git commit -m "added helloworld"
+   84  git branch -M main
+   85  git checkout -b different-name
+   86  git status
+   87  vi helloworld.py 
+   88  ll
+   89  git diff
+   90   git add .
+   91  git checkout -b change-name
+   92  git log
+   93  git checkout main
+   94  git log
+   95  git merge different-name
+   96  git log
+   97  git branch -d different-name
+   98  git checkout -b goodbye-name
+   99  vi helloworld.py 
+  100  python3 helloworld.py 
+  101  git commit -a -m 'say goodbye'
+  102   git checkout main
+  103  vi helloworld.py 
+  104  git commit -a -m 'say welcomeeeeeeeeeeeeeeeeee'
+  105  git diff goodbye-name
+  106   git merge goodbye-name
+  107  vi helloworld.py 
+  108  git commit -a
+  109  ll
+  110  git branch -d goodbye-name
+  111  git log
+  112  git
+  113  cd
+  114  
+  115  ll
+  116  cd sk/
+  117  ll
+  118  mkdir new-org
+  119  cd new-org/
+  120  git clone https://github.com/devops-sk0503/DO400-apps.git
+  121  ll
+  122  cd DO400-apps/
+  123  lll
+  124  ll
+  125  git tag 1.0.0
+  126  git tag
+  127  git push origin --tags
+  128  git checkout -b hello-redhat
+  129  mkdir heelo
+  130  ll
+  131  rm -rf heelo/
+  132  cd hello/
+  133  ll
+  134  vi hellorh.py
+  135  python3 hello
+  136  python3 hellorh.py 
+  137  cd ..
+  138  git add hello
+  139  git commit -m "added hello Red Hat"
+  140   git push -u origin hello-redhat
+  141  git checkout main
+  142   git pull origin main
+  143   git log
+  144  ll
+  145  cd school-library/
+  146  ll
+  147  git checkout main
+  148  git checkout -b unit-testing
+  149  ll
+  150  mvn
+  151  mvn test
+  152  vi src/test/java/com/redhat/training/LibraryTest.java 
+  153  mvn test
+  154  vi src/test/java/com/redhat/training/LibraryTest.java 
+  155  mvn test
+  156  vi src/test/java/com/redhat/training/LibraryTest.java 
+  157  vi src/test/java/com/redhat/training/
+  158  vi src/test/java/com/redhat/training/BookStatsTest.java 
+  159  mvn test
+  160  vi src/test/java/com/redhat/training/BookStatsTest.java 
+  161  mvn test
+  162  cd 
+  163  cd sk/
+  164  ll
+  165   cd DO400-apps
+  166  ls
+  167  git remote -v
+  168  cd calculator-microservices
+  169  ll
+  170  git checkout main
+  171  git checkout -b testing-implementation
+  172  ./start-dependant.sh
+  173  cd multiplier/
+  174  ll
+  175  vi src/main/java/com/redhat/training/MultiplierResource.java
+  176  visrc/test/java/com/redhat/training/
+  177  vi src/test/java/com/redhat/training/
+  178  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  179   ./mvnw test
+  180  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  181   ./mvnw test
+  182  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  183   ./mvnw test
+  184  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  185   ./mvnw test
+  186  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  187   ./mvnw test
+  188  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  189   ./mvnw test
+  190  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  191   ./mvnw test
+  192  vi src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  193  cd
+  194  ls
+  195  cd sk/
+  196  ls
+  197  cd DO400-apps/
+  198  ls
+  199  git remote -v
+  200  ls
+  201  git branch -a
+  202  ls
+  203  cd calculator-microservices/
+  204  ls
+  205  cd multiplier/
+  206  ls
+  207  vim src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  208  :q!
+  209  ls
+  210  cd sk/DO400-apps/calculator-microservices/
+  211  git branch -a
+  212  cd multiplier/
+  213  ls
+  214  vim src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  215  cd vim src/test/java/com/redhat/training/
+  216  ls
+  217  cd src/test/java/com/redhat/training/
+  218  ls -al
+  219  rm -rf .MultiplierResourceTest.java.swp
+  220  vim MultiplierResourceTest.java 
+  221  cd ..
+  222  ls
+  223  ./mvnw test 
+  224  ls
+  225  vim src/test/java/com/redhat/training/MultiplierResourceTest.java 
+  226  ./mvnw test 
+  227  cd ..
+  228  ls
+  229  cd shipping-calculator/
+  230  ls
+  231  git checkout main 
+  232  git checkout -b tdd-intro
+  233  ls
+  234  vi src/test/java/com/redhat/shipping/ShippingCalculatorTest.java 
+  235  ./mvnw test 
+  236  ls
+  237  vim src/main/java/com/redhat/shipping/ShippingCalculator.java
+  238  ./mvnw test 
+  239  vi src/test/java/com/redhat/shipping/ShippingCalculatorTest.java 
+  240  ./mvnw test 
+  241  vim src/main/java/com/redhat/shipping/ShippingCalculator.java
+  242  ./mvnw test 
+  243  vim src/main/java/com/redhat/shipping/ShippingCalculator.java
+  244  ./mvnw test 
+  245  cd
+  246  cd /opt/
+  247  oc new-app centos/ruby-22-centos7~https://github.com/openshift/ruby-ex.git
+  248  oc new-app centos/ruby-22-centos7:latest ~https://github.com/openshift/ruby-ex.git
+  249  oc new-app centos/ruby-22-centos7~https://github.com/openshift/ruby-ex.git
+  250  oc get is
+  251  oc get is -n openshift
+  252  oc login -u osagvo -p e1327c7490174c4ab795 https://api.ap46a.prod.ole.redhat.com:6443
+  253  oc get is -n openshift
+  254  cd
+  255  git clone https://github.com/shhari/DO288-apps
+  256  cd DO288-apps/
+  257  ls
+  258  cd php-helloworld/
+  259  ls
+  260  cat index.php 
+  261  oc new-app -i php https
+  262  oc new-app -i php https://github.com/shhari/DO288-apps --context-dir php-helloworld --name hello
+  263  oc get bc
+  264  oc logs -f bc/hello
+  265  oc get build
+  266  oc get pods
+  267  oc get svc
+  268  oc expose svc/hello
+  269  oc get route
+  270  curl -v  http://hello-osagvo-jenkins1.apps.ap46a.prod.ole.redhat.com
+  271  ls
+  272  vim index.php 
+  273  git add index.php 
+  274  git commit -m done
+  275  cd ..
+  276  git push -u origin main
+  277  curl -v  http://hello-osagvo-jenkins1.apps.ap46a.prod.ole.redhat.com
+  278  oc get build
+  279  oc get bc
+  280  oc describe bc/hello
+  281  oc get is
+  282  oc get pods
+  283  oc describe po/hello-59b7487d9d-68qcw
+  284  history 
+  285  curl -v  http://hello-osagvo-jenkins1.apps.ap46a.prod.ole.redhat.com
+  286  oc start-build hello -f
+  287* 
+  288  oc get pods
+  289  curl -v  http://hello-osagvo-jenkins1.apps.ap46a.prod.ole.redhat.com
+  290  oc get deployment
+  291  oc rollback hello
+  292  oc rollback deploy/hello
+  293  oc get deploy
+  294  history
+  295  cd
+  296  history > file.txt
